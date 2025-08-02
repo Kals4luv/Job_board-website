@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JobLynk Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>JobLynk</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/login">Login</a>
+            <a href="/admin">Admin</a>
+            <a href="/profile">Profile</a>
+            <a href="/job-search">Job Search</a>
+        </nav>
+    </header>
+    <main>
+        <section class="login-section">
+            <h2>Sign in to your account</h2>
+            <form class="login-form" method="post">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p class="register-link">Don't have an account? <a href="#">Register</a></p>
+        </section>
+    </main>
+</body>
+</html>

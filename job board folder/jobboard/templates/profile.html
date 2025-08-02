@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Seeker Profile - JobLynk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>JobLynk</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/login">Login</a>
+            <a href="/admin">Admin</a>
+            <a href="/profile">Profile</a>
+            <a href="/job-search">Job Search</a>
+        </nav>
+    </header>
+    <main>
+        <section class="profile-section">
+            <h2>Your Profile</h2>
+            <form id="profile-form" autocomplete="off">
+                <label for="profile-pic">Profile Picture</label>
+                <input type="file" id="profile-pic" accept="image/*">
+                <img id="profile-pic-preview" style="max-width:100px; border-radius:50%; display:none; margin-bottom:1em;" alt="Profile Picture Preview">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="skills">Skills</label>
+                <div style="display:flex;gap:0.5em;align-items:center;">
+                    <input type="text" id="skills" name="skills" placeholder="e.g. Python">
+                    <button id="add-skill">Add</button>
+                </div>
+                <div id="skills-tags" style="margin-bottom:1em;"></div>
+                <label for="bio">Short Bio</label>
+                <textarea id="bio" name="bio" rows="3" placeholder="Tell us about yourself..."></textarea>
+                <label>Education</label>
+                <div style="display:flex;gap:0.5em;align-items:center;">
+                    <input type="text" id="edu-school" placeholder="School">
+                    <input type="text" id="edu-degree" placeholder="Degree">
+                    <button id="add-edu">Add</button>
+                </div>
+                <ul id="edu-list"></ul>
+                <label>Experience</label>
+                <div style="display:flex;gap:0.5em;align-items:center;">
+                    <input type="text" id="exp-company" placeholder="Company">
+                    <input type="text" id="exp-role" placeholder="Role">
+                    <button id="add-exp">Add</button>
+                </div>
+                <ul id="exp-list"></ul>
+                <label>Social/Portfolio Links</label>
+                <input type="url" id="linkedin" name="linkedin" placeholder="LinkedIn URL">
+                <input type="url" id="github" name="github" placeholder="GitHub URL">
+                <input type="url" id="website" name="website" placeholder="Personal Website">
+                <label>Saved Jobs</label>
+                <div style="display:flex;gap:0.5em;align-items:center;">
+                    <input type="text" id="saved-job" placeholder="Job Title or Company">
+                    <button id="add-job">Add</button>
+                </div>
+                <ul id="jobs-list"></ul>
+                <button type="submit">Save Profile</button>
+                <button type="button" id="download-pdf" style="margin-top:1em;">Download as PDF</button>
+            </form>
+            <div id="profile-preview" style="display:none; margin-top:2em;"></div>
+        </section>
+    </main>
+    <script src="{{ url_for('static', filename='profile-enhanced.js') }}"></script>
+</body>
+</html>

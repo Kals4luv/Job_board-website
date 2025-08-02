@@ -1,0 +1,371 @@
+/* Job Search Page */
+.job-search-section {
+    max-width: 600px;
+    margin: 3em auto;
+    background: #fff;
+    padding: 2em 2.5em;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    text-align: center;
+}
+.job-search-section h2 {
+    margin-bottom: 1.5em;
+    color: #3358ff;
+}
+#search-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7em;
+    justify-content: center;
+    margin-bottom: 1.5em;
+}
+#search-form input[type="text"] {
+    padding: 0.7em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    min-width: 150px;
+}
+#search-form button {
+    background: #3358ff;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 0.7em 1.5em;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#search-form button:hover {
+    background: #4f8cff;
+}
+/* Responsive/mobile-friendly improvements */
+@media (max-width: 600px) {
+    .profile-section, .login-section, .register-section, .post-job-section, .job-details-section {
+        padding: 1em 0.5em;
+        max-width: 98vw;
+    }
+    header, main {
+        padding: 1em 0.5em;
+    }
+    nav a {
+        display: block;
+        margin: 0.5em 0;
+    }
+    .hero {
+        padding: 2em 0.5em;
+    }
+}
+
+/* Profile page new features */
+#skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin-bottom: 1em;
+}
+.skill-tag {
+    background: #3358ff;
+    color: #fff;
+    border-radius: 15px;
+    padding: 0.3em 1em;
+    font-size: 0.95em;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.skill-tag:hover {
+    background: #4f8cff;
+}
+#profile-pic-preview {
+    margin-bottom: 1em;
+}
+#edu-list, #exp-list, #jobs-list {
+    text-align: left;
+    margin: 0.5em 0 1em 0;
+    padding-left: 1.2em;
+}
+#edu-list li, #exp-list li, #jobs-list li {
+    background: #f4f4f4;
+    border-radius: 5px;
+    margin-bottom: 0.3em;
+    padding: 0.3em 0.7em;
+    cursor: pointer;
+    font-size: 0.97em;
+}
+#edu-list li:hover, #exp-list li:hover, #jobs-list li:hover {
+    background: #ffe0e0;
+}
+/* Profile Page */
+.profile-section {
+    max-width: 420px;
+    margin: 3em auto;
+    background: #fff;
+    padding: 2em 2.5em;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    text-align: center;
+}
+.profile-section h2 {
+    margin-bottom: 1.5em;
+    color: #3358ff;
+}
+#profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+#profile-form label {
+    text-align: left;
+    font-weight: 500;
+    color: #333;
+}
+#profile-form input[type="text"],
+#profile-form input[type="email"],
+#profile-form textarea {
+    padding: 0.7em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border 0.2s;
+}
+#profile-form input:focus,
+#profile-form textarea:focus {
+    border: 1.5px solid #3358ff;
+    outline: none;
+}
+#profile-form button {
+    background: #3358ff;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 0.7em 0;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#profile-form button:hover {
+    background: #4f8cff;
+}
+#profile-preview {
+    background: #f4f4f4;
+    border-radius: 8px;
+    padding: 1.5em;
+    text-align: left;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+}
+#profile-preview h3 {
+    margin-top: 0;
+    color: #3358ff;
+}
+/* Job Details Page */
+.job-details-section {
+    max-width: 600px;
+    margin: 3em auto;
+    background: #fff;
+    padding: 2em 2.5em;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+.job-details-section h2 {
+    margin-bottom: 0.5em;
+    color: #3358ff;
+}
+.job-details-section .company {
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 0.5em;
+}
+.job-details-section .location {
+    color: #555;
+    margin-bottom: 1em;
+}
+.job-details-section .description {
+    margin-bottom: 1.5em;
+    color: #333;
+}
+
+/* Post Job Page */
+.post-job-section {
+    max-width: 500px;
+    margin: 3em auto;
+    background: #fff;
+    padding: 2em 2.5em;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+.post-job-section h2 {
+    margin-bottom: 1.5em;
+    color: #3358ff;
+}
+.post-job-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.post-job-form label {
+    text-align: left;
+    font-weight: 500;
+    color: #333;
+}
+.post-job-form input[type="text"],
+.post-job-form textarea {
+    padding: 0.7em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border 0.2s;
+}
+.post-job-form input:focus,
+.post-job-form textarea:focus {
+    border: 1.5px solid #3358ff;
+    outline: none;
+}
+.post-job-form button {
+    background: #3358ff;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 0.7em 0;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.post-job-form button:hover {
+    background: #4f8cff;
+}
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+header { background: #333; color: #fff; padding: 1em; }
+nav a { color: #fff; margin-right: 1em; text-decoration: none; }
+main { padding: 2em; max-width: 900px; margin: 0 auto; }
+h1 { margin-top: 0; }
+
+.hero {
+    background: linear-gradient(90deg, #4f8cff 0%, #3358ff 100%);
+    color: #fff;
+    padding: 3em 2em;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 2em;
+}
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+.hero .cta-btn {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.75em 2em;
+    background: #fff;
+    color: #3358ff;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    cursor: pointer;
+}
+.hero .cta-btn:hover {
+    background: #3358ff;
+    color: #fff;
+}
+.jobs-list {
+    margin-top: 2em;
+}
+.job-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.job-card h4 {
+    margin: 0 0 0.2em 0;
+}
+.job-card p {
+    margin: 0 0 0.5em 0;
+    color: #555;
+}
+.apply-btn {
+    align-self: flex-start;
+    background: #3358ff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 0.5em 1.5em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.apply-btn:hover {
+    background: #4f8cff;
+}
+.login-section {
+    max-width: 400px;
+    margin: 3em auto;
+    background: #fff;
+    padding: 2em 2.5em;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    text-align: center;
+}
+.login-section h2 {
+    margin-bottom: 1.5em;
+    color: #3358ff;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.login-form label {
+    text-align: left;
+    font-weight: 500;
+    color: #333;
+}
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    padding: 0.7em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border 0.2s;
+}
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+    border: 1.5px solid #3358ff;
+    outline: none;
+}
+.login-form button {
+    background: #3358ff;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 0.7em 0;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.login-form button:hover {
+    background: #4f8cff;
+}
+.register-link {
+    margin-top: 1.5em;
+    font-size: 0.97em;
+}
+.register-link a {
+    color: #3358ff;
+    text-decoration: none;
+    font-weight: 500;
+}
+.register-link a:hover {
+    text-decoration: underline;
+}

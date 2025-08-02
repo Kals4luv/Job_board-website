@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JobLynk</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>JobLynk</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/login">Login</a>
+            <a href="/admin">Admin</a>
+            <a href="/profile">Profile</a>
+            <a href="/job-search">Job Search</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Find Your Dream Job</h2>
+            <p>Connecting top talent with great companies.</p>
+            <a href="#jobs" class="cta-btn">Browse Jobs</a>
+        </section>
+        <section id="jobs" class="jobs-list">
+            <h3>Latest Job Listings</h3>
+            <div class="job-card">
+                <h4>Frontend Developer</h4>
+                <p>Awesome Tech Inc. - Remote</p>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+            <div class="job-card">
+                <h4>Backend Engineer</h4>
+                <p>Innovatech - New York, NY</p>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+            <div class="job-card">
+                <h4>UI/UX Designer</h4>
+                <p>DesignPro - San Francisco, CA</p>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+        </section>
+    </main>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>

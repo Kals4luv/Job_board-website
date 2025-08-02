@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post a Job - JobLynk</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>JobLynk</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/login">Login</a>
+            <a href="/admin">Admin</a>
+            <a href="#jobs">Job Listings</a>
+        </nav>
+    </header>
+    <main>
+        <section class="post-job-section">
+            <h2>Post a New Job</h2>
+            <form class="post-job-form" method="post">
+                <label for="title">Job Title</label>
+                <input type="text" id="title" name="title" placeholder="e.g. Frontend Developer" required>
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company" placeholder="e.g. Awesome Tech Inc." required>
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" placeholder="e.g. Remote, New York, etc." required>
+                <label for="description">Job Description</label>
+                <textarea id="description" name="description" rows="5" placeholder="Describe the job role and requirements..." required></textarea>
+                <button type="submit">Post Job</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

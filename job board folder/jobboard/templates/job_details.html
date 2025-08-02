@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Details - JobLynk</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>JobLynk</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/login">Login</a>
+            <a href="/admin">Admin</a>
+            <a href="/post-job">Post a Job</a>
+        </nav>
+    </header>
+    <main>
+        <section class="job-details-section">
+            <h2>Frontend Developer</h2>
+            <p class="company">Awesome Tech Inc. - Remote</p>
+            <p class="location"><strong>Location:</strong> Remote</p>
+            <p class="description">
+                We are looking for a talented Frontend Developer to join our team. You will work on exciting projects and collaborate with a dynamic group of professionals.
+            </p>
+            <button class="apply-btn">Apply Now</button>
+        </section>
+    </main>
+</body>
+</html>
